@@ -8,29 +8,29 @@ const History = () => {
       <Head>
         <title>History | Abid Hasan</title>
       </Head>
-      <div className="p-4 shadow-xl lg:flex gap-x-10 min-h-screen max-h-screen overflow-y-auto scrollbar-hide">
-        <div className="lg:w-1/2 mb-6 lg:mb-0">
-          <h2 className="text-base font-bold mb-4">Education</h2>
+      <div className="p-4 shadow-xl lg:flex gap-x-10 lg:min-h-screen lg:max-h-screen lg:overflow-y-auto lg:scrollbar-hide">
+        <div className="mb-6 lg:w-1/2 lg:mb-0">
+          <h2 className="mb-4 text-base font-bold">Education</h2>
 
           <div className="flex gap-x-10">
             <div>
               {HISTORY_EDUCATION_DATA.map((data) => (
                 <div key={data.institution}>
-                  <div className="bg-gray-200 p-4 rounded-md mb-4 relative">
-                    <p className="text-base font-medium mb-2">
+                  <div className="relative p-4 mb-4 bg-gray-200 rounded-md">
+                    <p className="mb-2 text-base font-medium">
                       {data.institution}
                     </p>
-                    <p className="text-base font-normal mb-2 italic">
+                    <p className="mb-2 text-base italic font-normal">
                       {data.degree}
                     </p>
                     <p className="text-base font-normal mb-2 bg-gray-300 px-3 py-0.5 w-max rounded-3xl">
                       {data.duration}
                     </p>
-                    <p className="text-base font-normal mb-2">
+                    <p className="mb-2 text-base font-normal">
                       {data.description}
                     </p>
-                    <div className="absolute top-0 -right-10 transform translate-x-1/2 h-4 w-4 bg-blue-400 rounded-full"></div>
-                    <div className="absolute top-10 right-0 transform translate-x-1/2 h-3 w-3 bg-gray-200 rotate-45"></div>
+                    <div className="absolute top-0 w-4 h-4 transform translate-x-1/2 bg-blue-400 rounded-full -right-10"></div>
+                    <div className="absolute right-0 w-3 h-3 transform rotate-45 translate-x-1/2 bg-gray-200 top-10"></div>
                   </div>
                 </div>
               ))}
@@ -41,25 +41,25 @@ const History = () => {
         </div>
 
         <div className="lg:w-1/2">
-          <h2 className="text-base font-bold mb-4">Work History</h2>
+          <h2 className="mb-4 text-base font-bold">Work History</h2>
 
           <div className="flex gap-x-10">
             <div>
               {HISTORY_WORK_HISTORY_DATA.map((data) => (
                 <div key={data.duration}>
-                  <div className="bg-gray-200 p-4 rounded-md mb-4 relative">
-                    <p className="text-base font-medium mb-2">{data.company}</p>
-                    <p className="text-base font-normal mb-2 italic">
+                  <div className="relative p-4 mb-4 bg-gray-200 rounded-md">
+                    <p className="mb-2 text-base font-medium">{data.company}</p>
+                    <p className="mb-2 text-base italic font-normal">
                       {data.position}
                     </p>
                     <p className="text-base font-normal mb-2 bg-gray-300 px-3 py-0.5 w-max rounded-3xl">
                       {data.duration}
                     </p>
-                    <p className="text-base font-normal mb-2">
+                    <p className="mb-2 text-base font-normal">
                       {data.description}
                     </p>
-                    <div className="absolute top-0 -right-10 transform translate-x-1/2 h-4 w-4 bg-blue-400 rounded-full"></div>
-                    <div className="absolute top-10 right-0 transform translate-x-1/2 h-3 w-3 bg-gray-200 rotate-45"></div>
+                    <div className="absolute top-0 w-4 h-4 transform translate-x-1/2 bg-blue-400 rounded-full -right-10"></div>
+                    <div className="absolute right-0 w-3 h-3 transform rotate-45 translate-x-1/2 bg-gray-200 top-10"></div>
                   </div>
                 </div>
               ))}
