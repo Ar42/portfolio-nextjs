@@ -17,6 +17,7 @@ const Introduction = () => {
           alt="Profile Picture"
           fill
           className="object-cover"
+          priority={true}
         />
       </div>
       <p className="mt-2 text-sm font-bold text-center">
