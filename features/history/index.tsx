@@ -23,7 +23,7 @@ const History = () => {
                     <p className="mb-2 text-base italic font-normal">
                       {data.degree}
                     </p>
-                    <p className="text-base font-normal mb-2 bg-gray-300 px-3 py-0.5 w-max rounded-3xl text-black">
+                    <p className="text-xs font-normal mb-2 bg-gray-300 px-3 py-0.5 w-max rounded-3xl text-black">
                       {data.duration}
                     </p>
                     <p className="mb-2 text-base font-normal">
@@ -52,7 +52,7 @@ const History = () => {
                     <p className="mb-2 text-base italic font-normal">
                       {data.position}
                     </p>
-                    <p className="text-base font-normal mb-2 bg-gray-300 px-3 py-0.5 w-max rounded-3xl text-black">
+                    <p className="text-xs font-normal mb-2 bg-gray-300 px-3 py-0.5 w-max rounded-3xl text-black">
                       {data.duration}
                     </p>
                     <p className="mb-2 text-base font-normal">

@@ -21,7 +21,7 @@ function HamBurgerMenu(props: React.SVGAttributes<SVGElement>) {
           stroke="#fff"
           stroke-linecap="round"
           stroke-linejoin="round"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeWidth="5"
         />
         <line
@@ -33,7 +33,7 @@ function HamBurgerMenu(props: React.SVGAttributes<SVGElement>) {
           stroke="#fff"
           stroke-linecap="round"
           stroke-linejoin="round"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeWidth="5"
         />
         <line
@@ -45,7 +45,7 @@ function HamBurgerMenu(props: React.SVGAttributes<SVGElement>) {
           stroke="#fff"
           stroke-linecap="round"
           stroke-linejoin="round"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
           strokeWidth="5"
         />
       </g>
