@@ -98,7 +98,7 @@ export default function Home() {
         </div>
       </div>
 
-      <footer className="p-2 text-white bg-black bg-opacity-90 p2-3">
+      <footer className="p-2 text-white bg-black bg-opacity-90">
         <p className="text-sm text-center">© 2022 Copyright : Abid Hasan</p>
       </footer>
     </>
