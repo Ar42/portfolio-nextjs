@@ -10,18 +10,16 @@ const MAX_WIDTH: number = 260;
 
 const Introduction = () => {
   return (
-    <div className="">
-      <div className="mx-auto w-max">
+    <>
+      <div className="relative w-32 h-32 mx-auto">
         <Image
           src="/images/arnob2.jpg"
           alt="Profile Picture"
-          height={100}
-          width={130}
-          layout="fixed"
-          // className="rounded-full"
+          fill
+          className="object-cover"
         />
       </div>
-      <p className="text-sm font-bold text-center mt-2">
+      <p className="mt-2 text-sm font-bold text-center">
         {LEFTBAR_INTRODUCTION_DATA.name}
       </p>
       <p className="text-sm text-center">
@@ -45,22 +43,22 @@ const Introduction = () => {
         </p>
       </div>
 
-      <h2 className="text-sm font-semibold mt-6 mb-2">Language(s)</h2>
+      <h2 className="mt-6 mb-2 text-sm font-semibold">Language(s)</h2>
 
-      <p className="text-sm mb-1">Bangla</p>
+      <p className="mb-1 text-sm">Bangla</p>
       <LineProgressbar
         className="bg-green-600"
         width={(MAX_WIDTH / 100) * LEFTBAR_LANGUAGE_PERCENTAGE_DATA.Bengali}
         containerClassName="bg-green-200"
       />
 
-      <p className="text-sm mb-1 mt-2">English</p>
+      <p className="mt-2 mb-1 text-sm">English</p>
       <LineProgressbar
         className="bg-blue-600"
         width={(MAX_WIDTH / 100) * LEFTBAR_LANGUAGE_PERCENTAGE_DATA.English}
         containerClassName="bg-blue-200"
       />
-    </div>
+    </>
   );
 };
 

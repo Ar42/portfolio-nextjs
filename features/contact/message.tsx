@@ -25,15 +25,15 @@ const Message = () => {
 
   return (
     <>
-      <h2 className="text-base font-bold mb-4">Get in touch</h2>
+      <h2 className="mb-4 text-base font-bold">Get in touch</h2>
 
-      <div className="bg-gray-200p-4 rounded-md">
+      <div className="rounded-md bg-gray-200p-4">
         <input
           type="text"
           name="name"
           value={data.name}
           onChange={handleInputChange}
-          className="block border-b border-black w-full mb-6 placeholder-gray-600 outline-none"
+          className="block w-full px-1 mb-6 text-black placeholder-gray-600 border-b border-black rounded-sm outline-none"
           placeholder="Enter your name"
         />
 
@@ -43,7 +43,7 @@ const Message = () => {
           value={data.email}
           onChange={handleInputChange}
           placeholder="Enter your email"
-          className="block border-b border-black w-full mb-6 placeholder-gray-600 outline-none"
+          className="block w-full px-1 mb-6 text-black placeholder-gray-600 border-b border-black rounded-sm outline-none"
         />
 
         <textarea
@@ -51,7 +51,7 @@ const Message = () => {
           value={data.message}
           onChange={handleInputChange}
           placeholder="write something..."
-          className="block border border-black w-full mb-6 placeholder-gray-600 outline-none"
+          className="block w-full px-1 mb-6 text-black placeholder-gray-600 border border-black rounded-sm outline-none"
         ></textarea>
 
         <button

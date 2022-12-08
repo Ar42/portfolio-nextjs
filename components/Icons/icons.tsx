@@ -3,7 +3,7 @@ function HamBurgerMenu(props: React.SVGAttributes<SVGElement>) {
     <svg
       width="30px"
       height="30px"
-      viewBox="0 0 72 72"
+      viewBox="0 0 50 72"
       id="emoji"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -18,7 +18,7 @@ function HamBurgerMenu(props: React.SVGAttributes<SVGElement>) {
           y1="26"
           y2="26"
           fill="none"
-          stroke="#000000"
+          stroke="#fff"
           stroke-linecap="round"
           stroke-linejoin="round"
           stroke-miterlimit="10"
@@ -30,7 +30,7 @@ function HamBurgerMenu(props: React.SVGAttributes<SVGElement>) {
           y1="36"
           y2="36"
           fill="none"
-          stroke="#000000"
+          stroke="#fff"
           stroke-linecap="round"
           stroke-linejoin="round"
           stroke-miterlimit="10"
@@ -42,7 +42,7 @@ function HamBurgerMenu(props: React.SVGAttributes<SVGElement>) {
           y1="46"
           y2="46"
           fill="none"
-          stroke="#000000"
+          stroke="#fff"
           stroke-linecap="round"
           stroke-linejoin="round"
           stroke-miterlimit="10"
@@ -64,14 +64,14 @@ function CrossIcon(props: React.SVGAttributes<SVGElement>) {
     >
       <path
         d="M18 6L6 18"
-        stroke="#000"
+        stroke="#fff"
         strokeWidth="2"
         stroke-linecap="round"
         stroke-linejoin="round"
       />
       <path
         d="M6 6L18 18"
-        stroke="#000"
+        stroke="#fff"
         strokeWidth="2"
         stroke-linecap="round"
         stroke-linejoin="round"
