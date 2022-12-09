@@ -5,7 +5,7 @@ export const HOME_CONTACT_LOCATION_DATA = {
 };
 
 export const HOME_CONTACT_MEDIA_DATA = {
-  email: "arnobhasan36@gmail.com",
-  skype: "https://www.linkedin.com/in/abid-hasan-959a87205/",
+  email: "arnobhasan364@gmail.com",
+  skype: "https://join.skype.com/invite/ud1tIRduQMOq",
   linkedin: "https://www.linkedin.com/in/abid-hasan-959a87205/",
 };
