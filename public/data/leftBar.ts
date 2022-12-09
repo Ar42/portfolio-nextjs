@@ -4,6 +4,7 @@ export const LEFTBAR_INTRODUCTION_DATA = {
   residence: "Bangladesh",
   city: "Mymensingh",
   age: "24",
+  isAvailable: true,
 };
 
 export const LEFTBAR_LANGUAGE_PERCENTAGE_DATA = {

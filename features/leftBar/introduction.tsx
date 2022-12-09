@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useState } from "react";
 import LineProgressbar from "../../components/lineProgressbar";
 
 import {
@@ -9,16 +10,57 @@ import {
 const MAX_WIDTH: number = 260;
 
 const Introduction = () => {
+  const [isShowHover, setIsShowHover] = useState<boolean>(false);
+  const handleAvailibityHover = () => {
+    setTimeout(() => {
+      setIsShowHover(false);
+    }, 3000);
+    setIsShowHover(true);
+  };
+
   return (
     <>
-      <div className="relative w-32 h-32 mx-auto">
+      <div className="relative mx-auto w-36 h-36">
         <Image
           src="/images/arnob2.jpg"
           alt="Profile Picture"
           fill
-          className="object-cover"
+          className="object-cover rounded-full"
           priority={true}
         />
+        <button
+          onClick={handleAvailibityHover}
+          className={`absolute w-4 h-4 ${
+            !LEFTBAR_INTRODUCTION_DATA.isAvailable
+              ? "bg-red-700"
+              : "bg-green-700"
+          } ${
+            isShowHover ? "hidden" : "block"
+          } border-2 border-white rounded-full right-3 bottom-3.5`}
+        ></button>
+
+        {isShowHover && (
+          <div
+            className={`absolute px-1 py-0.5 ${
+              !LEFTBAR_INTRODUCTION_DATA.isAvailable
+                ? "bg-red-700"
+                : "bg-green-700"
+            } rounded-sm bottom-6 right-1`}
+          >
+            <p className="text-xs">
+              {!LEFTBAR_INTRODUCTION_DATA.isAvailable
+                ? "Not available to be hired right now"
+                : "Available to be hired right now"}
+            </p>
+            <div
+              className={`${
+                !LEFTBAR_INTRODUCTION_DATA.isAvailable
+                  ? "bg-red-700"
+                  : "bg-green-700"
+              } h-5 w-5 absolute rotate-45 bottom-[0.1px] right-1`}
+            ></div>
+          </div>
+        )}
       </div>
       <p className="mt-2 text-sm font-bold text-center">
         {LEFTBAR_INTRODUCTION_DATA.name}
