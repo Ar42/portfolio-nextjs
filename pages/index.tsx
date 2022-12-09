@@ -29,7 +29,7 @@ export default function Home() {
   };
   return (
     <>
-      <div className="flex-row-reverse p-4 text-white bg-black lg:flex gap-x-4">
+      <div className="flex-row-reverse p-4 pt-8 text-white bg-black lg:flex gap-x-4">
         <div className="relative mb-6 lg:w-9/12 lg:mb-0">
           {selectedMenu === MENU.HOME ? (
             <HomeComponent />
@@ -41,7 +41,7 @@ export default function Home() {
             <Blog />
           )}
 
-          <div className="absolute right-0 z-10 -top-3">
+          <div className="absolute right-0 z-10 -top-6">
             {!isMenuOpen ? (
               <button onClick={handleModalOpenClose}>
                 <HamBurgerMenu />

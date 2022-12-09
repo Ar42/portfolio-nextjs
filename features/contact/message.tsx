@@ -1,4 +1,5 @@
 import { ChangeEvent, useState } from "react";
+import Modal from "../../components/modal";
 const initialData = {
   name: "",
   email: "",
@@ -7,6 +8,7 @@ const initialData = {
 
 const Message = () => {
   const [data, setData] = useState(initialData);
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
   const handleInputChange = (
     event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -21,6 +23,7 @@ const Message = () => {
 
   const onSubmit = () => {
     setData(initialData);
+    setIsModalOpen(true);
   };
 
   return (
@@ -33,7 +36,7 @@ const Message = () => {
           name="name"
           value={data.name}
           onChange={handleInputChange}
-          className="block w-full px-1 mb-6 text-black placeholder-gray-600 border-b border-black rounded-sm outline-none"
+          className="block w-full px-1.5 py-1 mb-6 text-black placeholder-gray-600 border-b border-black rounded-sm outline-none"
           placeholder="Enter your name"
         />
 
@@ -43,7 +46,7 @@ const Message = () => {
           value={data.email}
           onChange={handleInputChange}
           placeholder="Enter your email"
-          className="block w-full px-1 mb-6 text-black placeholder-gray-600 border-b border-black rounded-sm outline-none"
+          className="block w-full px-1.5 py-1 mb-6 text-black placeholder-gray-600 border-b border-black rounded-sm outline-none"
         />
 
         <textarea
@@ -51,7 +54,7 @@ const Message = () => {
           value={data.message}
           onChange={handleInputChange}
           placeholder="write something..."
-          className="block w-full px-1 mb-6 text-black placeholder-gray-600 border border-black rounded-sm outline-none"
+          className="block w-full px-1.5 py-1 mb-6 text-black placeholder-gray-600 border border-black rounded-sm outline-none"
         ></textarea>
 
         <button
@@ -60,6 +63,12 @@ const Message = () => {
         >
           submit
         </button>
+        <Modal
+          isModalOpen={isModalOpen}
+          setIsModalOpen={setIsModalOpen}
+          message="currently your message in not reaching to the author..."
+          messageClassName="text-red-500"
+        />
       </div>
     </>
   );

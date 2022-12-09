@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   HOME_CONTACT_LOCATION_DATA,
   HOME_CONTACT_MEDIA_DATA,
@@ -28,18 +29,35 @@ const Info = () => {
 
         <div className="p-4 bg-gray-800 rounded-md lg:w-1/2">
           <p className="mb-2 text-base">
-            <span className="font-medium">Email:</span>
-            <span> {HOME_CONTACT_MEDIA_DATA.email}</span>
+            <span className="font-medium">Email: </span>
+            <a
+              href={`mailto:${HOME_CONTACT_MEDIA_DATA.email}`}
+              className="hover:text-green-500"
+            >
+              {HOME_CONTACT_MEDIA_DATA.email}
+            </a>
           </p>
 
           <p className="mb-2 text-base">
-            <span className="font-medium">Skype:</span>
-            <span> {HOME_CONTACT_MEDIA_DATA.skype}</span>
+            <span className="font-medium">Skype: </span>
+            <Link
+              href={HOME_CONTACT_MEDIA_DATA.skype}
+              target="blank"
+              className="hover:text-green-500"
+            >
+              Abid Hasan
+            </Link>
           </p>
 
           <p className="mb-2 text-base">
-            <span className="font-medium">Linkedin:</span>
-            <span> {HOME_CONTACT_MEDIA_DATA.linkedin}</span>
+            <span className="font-medium">Linkedin: </span>
+            <Link
+              href={HOME_CONTACT_MEDIA_DATA.linkedin}
+              target="blank"
+              className="hover:text-green-500"
+            >
+              Abid Hasan
+            </Link>
           </p>
         </div>
       </div>
