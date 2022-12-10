@@ -58,7 +58,7 @@ const Message = () => {
         ></textarea>
 
         <button
-          className="bg-green-500 text-white px-2 py-0.5"
+          className="bg-green-1000 text-white px-2 py-0.5"
           onClick={onSubmit}
         >
           submit

@@ -7,12 +7,14 @@ import Contact from "../features/contact";
 import History from "../features/history";
 import HomeComponent from "../features/home";
 import LeftBar from "../features/leftBar";
+import Project from "../features/project";
 
 const MENU: { [key: string]: string } = {
   HOME: "Home",
   HISTORY: "History",
   CONTACT: "Contact",
   BLOG: "Blog",
+  PROJECT: "Project",
 };
 
 export default function Home() {
@@ -32,11 +34,13 @@ export default function Home() {
       <div className="flex-row-reverse p-4 pt-8 text-white bg-black lg:flex gap-x-4">
         <div className="relative mb-6 lg:w-9/12 lg:mb-0">
           {selectedMenu === MENU.HOME ? (
-            <HomeComponent />
+            <HomeComponent setSelectedMenu={setSelectedMenu} />
           ) : selectedMenu === MENU.HISTORY ? (
             <History />
           ) : selectedMenu === MENU.CONTACT ? (
             <Contact />
+          ) : selectedMenu === MENU.PROJECT ? (
+            <Project />
           ) : (
             <Blog />
           )}
@@ -56,7 +60,10 @@ export default function Home() {
                 </button>
                 <ul>
                   <li
-                    className="px-4 py-3 border-b border-gray-200 cursor-pointer"
+                    className={`px-4 py-3 border-b border-gray-200 cursor-pointer ${
+                      selectedMenu === MENU.HOME &&
+                      "text-green-1000 font-semibold"
+                    }`}
                     onClick={() => {
                       handleSelectMenu(MENU.HOME);
                     }}
@@ -64,7 +71,10 @@ export default function Home() {
                     {MENU.HOME}
                   </li>
                   <li
-                    className="px-4 py-3 border-b border-gray-200 cursor-pointer"
+                    className={`px-4 py-3 border-b border-gray-200 cursor-pointer ${
+                      selectedMenu === MENU.HISTORY &&
+                      "text-green-1000 font-semibold"
+                    }`}
                     onClick={() => {
                       handleSelectMenu(MENU.HISTORY);
                     }}
@@ -72,7 +82,10 @@ export default function Home() {
                     {MENU.HISTORY}
                   </li>
                   <li
-                    className="px-4 py-3 border-b border-gray-200 cursor-pointer"
+                    className={`px-4 py-3 border-b border-gray-200 cursor-pointer ${
+                      selectedMenu === MENU.CONTACT &&
+                      "text-green-1000 font-semibold"
+                    }`}
                     onClick={() => {
                       handleSelectMenu(MENU.CONTACT);
                     }}
@@ -80,7 +93,21 @@ export default function Home() {
                     {MENU.CONTACT}
                   </li>
                   <li
-                    className="px-4 pt-3 cursor-pointer"
+                    className={`px-4 py-3 border-b border-gray-200 cursor-pointer ${
+                      selectedMenu === MENU.PROJECT &&
+                      "text-green-1000 font-semibold"
+                    }`}
+                    onClick={() => {
+                      handleSelectMenu(MENU.PROJECT);
+                    }}
+                  >
+                    {MENU.PROJECT}
+                  </li>
+                  <li
+                    className={`px-4 pt-3 cursor-pointer ${
+                      selectedMenu === MENU.BLOG &&
+                      "text-green-1000 font-semibold"
+                    }`}
                     onClick={() => {
                       handleSelectMenu(MENU.BLOG);
                     }}
