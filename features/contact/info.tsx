@@ -32,7 +32,7 @@ const Info = () => {
             <span className="font-medium">Email: </span>
             <a
               href={`mailto:${HOME_CONTACT_MEDIA_DATA.email}`}
-              className="hover:text-green-500"
+              className="text-green-500 hover:underline"
             >
               {HOME_CONTACT_MEDIA_DATA.email}
             </a>
@@ -43,7 +43,7 @@ const Info = () => {
             <Link
               href={HOME_CONTACT_MEDIA_DATA.skype}
               target="blank"
-              className="hover:text-green-500"
+              className="text-green-500 hover:underline"
             >
               Abid Hasan
             </Link>
@@ -54,7 +54,7 @@ const Info = () => {
             <Link
               href={HOME_CONTACT_MEDIA_DATA.linkedin}
               target="blank"
-              className="hover:text-green-500"
+              className="text-green-500 hover:underline"
             >
               Abid Hasan
             </Link>

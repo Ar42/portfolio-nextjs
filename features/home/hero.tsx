@@ -21,6 +21,8 @@ const Hero = () => {
           alt="Profile Picture"
           fill
           className="object-cover"
+          placeholder="blur"
+          blurDataURL="/images/arnob1.jpg"
         />
       </div>
     </div>

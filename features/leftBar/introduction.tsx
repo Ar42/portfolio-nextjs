@@ -26,7 +26,8 @@ const Introduction = () => {
           alt="Profile Picture"
           fill
           className="object-cover rounded-full"
-          priority={true}
+          placeholder="blur"
+          blurDataURL="/images/arnob2.jpg"
         />
         <button
           onClick={handleAvailibityHover}
