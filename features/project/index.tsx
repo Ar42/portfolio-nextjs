@@ -11,13 +11,16 @@ const Project = () => {
       </Head>
 
       <div className="p-4 shadow-xl lg:min-h-screen lg:max-h-screen lg:overflow-y-auto lg:scrollbar-hide">
+        <h2 className="mb-4 text-lg font-bold">Real Life Projects</h2>
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
           {PROJECT_DATA.map((data) => (
-            <div className="bg-gray-600 rounded-md" key={data.name}>
-              <div className="relative px-6 pt-6 pb-3 lg:flex gap-x-10">
+            <div className="bg-gray-700 rounded-md" key={data.name}>
+              <div className="relative px-6 pt-6 pb-3 lg:flex gap-x-4">
                 <div className="absolute w-8 bg-gray-200 h-7 -top-1 -left-1"></div>
                 <div className="lg:w-4/12">
-                  <h4 className="text-xl font-black lg:mb-3">{data.name}</h4>
+                  <h4 className="text-base font-extrabold text-green-1000 lg:mb-3">
+                    {data.name}
+                  </h4>
                   <h4 className="mb-2 text-xs font-medium lg:mb-0">
                     {data.location_origin} Project
                   </h4>
