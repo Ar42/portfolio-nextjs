@@ -20,7 +20,7 @@ const History = () => {
                     <p className="mb-2 text-base font-medium">
                       {data.institution}
                     </p>
-                    <p className="mb-2 text-base italic font-normal">
+                    <p className="mb-2 text-xs italic font-normal">
                       {data.degree}
                     </p>
                     <p className="text-xs font-normal mb-2 bg-gray-300 px-3 py-0.5 w-max rounded-3xl text-black">
@@ -49,7 +49,7 @@ const History = () => {
                 <div key={data.duration}>
                   <div className="relative p-4 mb-4 bg-gray-800 rounded-md">
                     <p className="mb-2 text-base font-medium">{data.company}</p>
-                    <p className="mb-2 text-base italic font-normal">
+                    <p className="mb-2 text-xs italic font-normal">
                       {data.position}
                     </p>
                     <p className="text-xs font-normal mb-2 bg-gray-300 px-3 py-0.5 w-max rounded-3xl text-black">

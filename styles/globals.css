@@ -16,7 +16,7 @@
 }
 
 .section_heading {
-  @apply mb-4 text-xl font-bold text-green-1000;
+  @apply mb-4 text-xl font-bold;
 }
 
 .card_style_1 {
