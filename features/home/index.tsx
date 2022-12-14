@@ -1,8 +1,9 @@
 import Head from "next/head";
-import Skills from "../skills";
+
 import Blogs from "./blogs";
 import Hero from "./hero";
 import History from "./history";
+import Skills from "./skills";
 
 interface HomeComponentINT {
   setSelectedMenu: Function;
