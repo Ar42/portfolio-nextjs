@@ -7,7 +7,7 @@ import {
 const Info = () => {
   return (
     <>
-      <h2 className="mb-4 text-lg font-bold">Contact information</h2>
+      <h2 className="section_heading">Contact information</h2>
 
       <div className="mb-10 lg:flex gap-x-10">
         <div className="p-4 mb-4 bg-gray-800 rounded-md lg:w-1/2 lg:mb-0">
@@ -27,7 +27,7 @@ const Info = () => {
           </p>
         </div>
 
-        <div className="p-4 bg-gray-800 rounded-md lg:w-1/2">
+        <div className="card_style_1 lg:w-1/2">
           <p className="mb-2 text-base">
             <span className="font-medium">Email: </span>
             <a

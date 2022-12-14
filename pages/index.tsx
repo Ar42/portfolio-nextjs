@@ -2,7 +2,6 @@ import { useState } from "react";
 
 import { CrossIcon, HamBurgerMenu } from "../components/Icons/icons";
 
-import Blog from "../features/blog";
 import Contact from "../features/contact";
 import History from "../features/history";
 import HomeComponent from "../features/home";
@@ -13,7 +12,6 @@ const MENU: { [key: string]: string } = {
   HOME: "Home",
   HISTORY: "History",
   CONTACT: "Contact",
-  BLOG: "Blog",
   PROJECT: "Project",
 };
 
@@ -39,10 +37,8 @@ export default function Home() {
             <History />
           ) : selectedMenu === MENU.CONTACT ? (
             <Contact />
-          ) : selectedMenu === MENU.PROJECT ? (
-            <Project />
           ) : (
-            <Blog />
+            selectedMenu === MENU.PROJECT && <Project />
           )}
 
           <div className="absolute right-0 z-10 -top-6">
@@ -93,7 +89,7 @@ export default function Home() {
                     {MENU.CONTACT}
                   </li>
                   <li
-                    className={`px-4 py-3 border-b border-gray-200 cursor-pointer ${
+                    className={`px-4 pt-3 cursor-pointer ${
                       selectedMenu === MENU.PROJECT &&
                       "text-green-1000 font-semibold"
                     }`}
@@ -102,17 +98,6 @@ export default function Home() {
                     }}
                   >
                     {MENU.PROJECT}
-                  </li>
-                  <li
-                    className={`px-4 pt-3 cursor-pointer ${
-                      selectedMenu === MENU.BLOG &&
-                      "text-green-1000 font-semibold"
-                    }`}
-                    onClick={() => {
-                      handleSelectMenu(MENU.BLOG);
-                    }}
-                  >
-                    {MENU.BLOG}
                   </li>
                 </ul>
               </menu>

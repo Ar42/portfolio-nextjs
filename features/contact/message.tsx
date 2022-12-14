@@ -28,7 +28,7 @@ const Message = () => {
 
   return (
     <>
-      <h2 className="mb-4 text-base font-bold">Get in touch</h2>
+      <h2 className="section_heading">Get in touch</h2>
 
       <div className="rounded-md bg-gray-200p-4">
         <input
@@ -58,7 +58,7 @@ const Message = () => {
         ></textarea>
 
         <button
-          className="bg-green-1000 text-white px-2 py-0.5"
+          className="bg-green-500 text-white px-2 py-0.5"
           onClick={onSubmit}
         >
           submit

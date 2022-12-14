@@ -1,17 +1,30 @@
+import Link from "next/link";
 import { HOME_TECHNOLIGIES_DATA } from "../../public/data/home";
 
 const Technologies = () => {
   return (
-    <div className="mb-4">
-      <h2 className="mb-4 text-xl font-bold">Technologies I used to work</h2>
-      <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
+    <div className="mb-12">
+      <div className="flex items-center justify-between">
+        <h2 className="section_heading">Technologies I used to work</h2>
+        <button className="hidden mb-4 text-base font-medium lg:block text-green-1000 hover:underline">
+          <Link href="/technology"> view details</Link>
+        </button>
+      </div>
+
+      <div className="flex flex-wrap items-center gap-4">
         {HOME_TECHNOLIGIES_DATA.map((data) => (
-          <div className="p-4 bg-gray-800" key={data.name}>
-            <h4 className="text-base font-semibold mb-1.5">{data.name}</h4>
-            <p className="text-sm">{data.details}</p>
-          </div>
+          <h4
+            className="text-base font-semibold mb-1.5 bg-gray-800 px-3 py-1.5 rounded-md"
+            key={data.name}
+          >
+            {data.name}
+          </h4>
         ))}
       </div>
+
+      <button className="mt-4 mb-4 text-base font-medium lg:hidden lg:mt-0 text-green-1000 hover:underline">
+        <Link href="/technology">view details</Link>
+      </button>
     </div>
   );
 };

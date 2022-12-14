@@ -52,3 +52,41 @@ export const HOME_TECHNOLIGIES_DATA = [
       "React Query is often described as the missing data-fetching library for React. Still, in more technical terms, it makes fetching, caching, synchronizing, and updating server state in your React applications a breeze.",
   },
 ];
+
+export const HOME_BLOG_DATA = [
+  {
+    id: 0,
+    title: "‘Impressive my friend’",
+    description:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea similique, quibusdam quo accusantium non, ullam sunt aspernatur nulla iusto molestiae voluptatibus porro laborum deleniti. Nemo voluptates iure veniam sunt quos dignissimos possimus, deleniti veritatis odio libero voluptatibus recusandae, repudiandae tempora.",
+    isFeatured: false,
+    update_time: "14.12.2022",
+  },
+
+  {
+    id: 1,
+    title: "JavaSript",
+    description:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea similique, quibusdam quo accusantium non, ullam sunt aspernatur nulla iusto molestiae voluptatibus porro laborum deleniti. Nemo voluptates iure veniam sunt quos dignissimos possimus, deleniti veritatis odio libero voluptatibus recusandae, repudiandae tempora.",
+    isFeatured: false,
+    update_time: "14.12.2022",
+  },
+
+  {
+    id: 2,
+    title: "JavaSript",
+    description:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea similique, quibusdam quo accusantium non, ullam sunt aspernatur nulla iusto molestiae voluptatibus porro laborum deleniti. Nemo voluptates iure veniam sunt quos dignissimos possimus, deleniti veritatis odio libero voluptatibus recusandae, repudiandae tempora.",
+    isFeatured: true,
+    update_time: "14.12.2022",
+  },
+
+  {
+    id: 3,
+    title: "JavaSript",
+    description:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea similique, quibusdam quo accusantium non, ullam sunt aspernatur nulla iusto molestiae voluptatibus porro laborum deleniti. Nemo voluptates iure veniam sunt quos dignissimos possimus, deleniti veritatis odio libero voluptatibus recusandae, repudiandae tempora.",
+    isFeatured: false,
+    update_time: "14.12.2022",
+  },
+];

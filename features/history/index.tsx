@@ -10,7 +10,7 @@ const History = () => {
       </Head>
       <div className="p-4 shadow-xl lg:flex gap-x-10 lg:min-h-screen lg:max-h-screen lg:overflow-y-auto lg:scrollbar-hide">
         <div className="mb-8 lg:w-1/2 lg:mb-0">
-          <h2 className="mb-4 text-lg font-bold">Education</h2>
+          <h2 className="section_heading">Education</h2>
 
           <div className="flex gap-x-10">
             <div>
@@ -41,7 +41,7 @@ const History = () => {
         </div>
 
         <div className="lg:w-1/2">
-          <h2 className="mb-4 text-lg font-bold">Work History</h2>
+          <h2 className="section_heading">Work History</h2>
 
           <div className="flex gap-x-10">
             <div>

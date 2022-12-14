@@ -11,7 +11,7 @@ const Project = () => {
       </Head>
 
       <div className="p-4 shadow-xl lg:min-h-screen lg:max-h-screen lg:overflow-y-auto lg:scrollbar-hide">
-        <h2 className="mb-4 text-lg font-bold">Real Life Projects</h2>
+        <h2 className="section_heading">Real Life Projects</h2>
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
           {PROJECT_DATA.map((data) => (
             <div className="bg-gray-700 rounded-md" key={data.name}>
@@ -34,7 +34,7 @@ const Project = () => {
                 <span className="font-semibold">Live url: </span>
 
                 <Link
-                  href="https://www.wellteam.me"
+                  href={data.live_url}
                   target="blank"
                   className="cursor-pointer text-green-1000 hover:underline"
                 >

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Blogs from "./blogs";
 import Hero from "./hero";
 import History from "./history";
 import Technologies from "./technologies";
@@ -17,6 +18,7 @@ const HomeComponent = ({ setSelectedMenu }: HomeComponentINT) => {
         <Hero setSelectedMenu={setSelectedMenu} />
         <History />
         <Technologies />
+        <Blogs />
       </div>
     </>
   );
