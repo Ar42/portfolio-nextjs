@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }: AppProps) {
   if (typeof window !== "undefined") {
     window.addEventListener("scroll", () => {
       const goTopBtn = document.getElementById("goTop");
-      if (window.scrollY > 700) {
+      if (window.scrollY > 400) {
         goTopBtn?.classList.remove("hidden");
       } else {
         goTopBtn?.classList.add("hidden");

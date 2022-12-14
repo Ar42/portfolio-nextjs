@@ -7,7 +7,7 @@ const Blogs = () => {
     <div className="mb-4">
       <div className="flex items-center justify-between">
         <h2 className="section_heading">Blogs</h2>
-        <button className="hidden mb-4 text-base font-medium lg:block text-green-1000 hover:underline">
+        <button className="mb-4 text-base font-medium text-green-1000 hover:underline">
           <Link href="/blog">view all</Link>
         </button>
       </div>
@@ -23,10 +23,6 @@ const Blogs = () => {
           </div>
         ))}
       </div>
-
-      <button className="mt-4 mb-4 text-base font-medium lg:hidden lg:mt-0 text-green-1000 hover:underline">
-        <Link href="/blog">view all</Link>
-      </button>
     </div>
   );
 };

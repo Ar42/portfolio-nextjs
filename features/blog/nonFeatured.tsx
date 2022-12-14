@@ -19,10 +19,6 @@ const NonFeatured = () => {
             )
         )}
       </div>
-
-      <button className="mt-4 mb-4 text-base font-medium lg:hidden lg:mt-0 text-green-1000 hover:underline">
-        <Link href="/blog">view details</Link>
-      </button>
     </div>
   );
 };

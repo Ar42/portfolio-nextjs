@@ -4,7 +4,7 @@ import { HOME_BLOG_DATA } from "../../public/data/home";
 
 const Featured = () => {
   return (
-    <div className="mb-12">
+    <div className="mb-24">
       <h2 className="section_heading">Featured Blogs</h2>
 
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
@@ -19,10 +19,6 @@ const Featured = () => {
             )
         )}
       </div>
-
-      <button className="mt-4 mb-4 text-base font-medium lg:hidden lg:mt-0 text-green-1000 hover:underline">
-        <Link href="/blog">view details</Link>
-      </button>
     </div>
   );
 };

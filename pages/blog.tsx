@@ -10,8 +10,8 @@ const Blog = () => {
         <title>Blog | Abid Hasan</title>
       </Head>
       <div className="min-h-screen p-4 pt-8 text-white bg-black">
-        <NonFeatured />
         <Featured />
+        <NonFeatured />
       </div>
     </>
   );
