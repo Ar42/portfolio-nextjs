@@ -1,10 +1,10 @@
 export const LEFTBAR_INTRODUCTION_DATA = {
   name: "Abid Hasan",
-  job_title: "Software Engineer (Front-end)",
+  job_title: "L-1 Software Engineer",
   residence: "Bangladesh",
   city: "Mymensingh",
   age: "24",
-  isAvailable: true,
+  isAvailable: false,
 };
 
 export const LEFTBAR_LANGUAGE_PERCENTAGE_DATA = {
